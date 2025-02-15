@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="icons/chronometer.png">
+	<link href="style/main.css" rel="stylesheet" />
+	<title>Chronometer</title>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Night/Day Toggle -->
+		<div class="wrapper">
+			<div class="toggle-btn">
+				<h2 class="text-mode">🌙 Night Mode</h2>
+				<div class="icon">
+					<i class="fa fa-moon-o night"></i>
+					<i class="fa fa-sun-o day"></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- Timer -->
+		<div class="timer-box">
+			<div class="timer-visual">⏳</div>
+			<h2>Timer</h2>
+			<p class="timer-display" id="seconds-counter">00</p>
+		</div>
+
+		<hr id="line" />
+
+		<!-- Stopwatch -->
+		<div class="stopwatch-box">
+			<div class="stopwatch-visual">⏱️</div>
+			<h2>Stopwatch</h2>
+			<p class="stopwatch-display"><span id="seconds">00</span>:<span id="tens">00</span></p>
+			<div id="btns">
+				<button class="button start-btn" id="button-start">Start</button>
+				<button class="button stop-btn" id="button-stop">Stop</button>
+				<button class="button reset-btn" id="button-reset">Restart</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
